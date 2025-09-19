@@ -14,7 +14,7 @@ https://www.tooplate.com/view/2134-gotto-job
   --primary-color:                #5d52ba;
   --secondary-color:              #0dcaf0;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #f65129;
+  --custom-btn-bg-color:          #198754;
   --social-icon-link-bg-color:    #7f73eb;
   --dark-color:                   #000000;
   --p-color:                      #717275;
@@ -38,8 +38,8 @@ https://www.tooplate.com/view/2134-gotto-job
 
   --font-weight-thin:             100;
   --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-semibold:         600;
+  --font-weight-normal:           300;
+  --font-weight-bold:             700;
   --font-weight-bold:             700;
 }
 
@@ -1479,23 +1479,37 @@ nav[aria-label="breadcrumb"] {
     border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
   }
 
-  .job-body p {
-    font-size: var(--btn-font-size);
+/* Make job titles larger & bolder */
+ .job-card .job-description {
+  font-size: 1rem;     /* slightly smaller */
+  font-weight: 400;    /* normal weight */
+  color: #555;         /* softer color for contrast */
   }
 
-  .job-location {
-    min-width: 140px;
-  }
 
-  .job-price {
-    min-width: inherit;
-    margin-top: 5px;
-    margin-left: 0;
-  }
+.job-body p {
+  font-size: var(--btn-font-size);
+}
 
-  .hero-form button[type="submit"] {
-    margin-bottom: 0;
-  }
+.job-location {
+  min-width: 140px;
+}
+
+.posted-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.job-price {
+  min-width: inherit;
+  margin-top: 5px;
+  margin-left: 0;
+}
+
+.hero-form button[type="submit"] {
+  margin-bottom: 0;
+}
 
   .site-footer {
     padding-top: 50px;
